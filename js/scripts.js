@@ -35,6 +35,8 @@ askMrRoboger(40);
 // UI Logic
 
 window.addEventListener("load", function () {
-    const form = document.getElementsByClassName('form');
-    console.log(form)
+    const formInput = document.getElementsByClassName('form-input')[0].value;
+    const formInputLabel = document.getElementById('input-label').textContent;
+    console.log(formInput);
+
 });
