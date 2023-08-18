@@ -33,25 +33,28 @@ function askMrRoboger(userNum) {
 
 // UI Logic
 
+
+
+
 function formHandler(e) {
     e.preventDefault();
+    resultContainer.append(ul);
+
+    const form = document.getElementById('form');
+    const resultContainer = document.getElementById('result');
     const num = document.getElementsByClassName('form-input')[0].value;
+    const ul = document.createElement("ul");
+
     const result = askMrRoboger(num);
 
-    const listResult = result.map(function (num) {
+    result.forEach(function (num) {
         const li = document.createElement("li");
-        li.append(num)
-        return li;
+        li.append(num);
+        ul.append(li);
     });
+    resultContainer.append(ul);
 
-
-
-    const ul = document.createElement("ul");
-    ul.append(listResult);
-
-    console.log(ul)
-
-
+    form.reset();
 }
 
 
