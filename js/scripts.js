@@ -35,15 +35,15 @@ askMrRoboger(40);
 // UI Logic
 
 window.addEventListener("load", function () {
+    const form = document.getElementById('form');
     const formInput = document.getElementsByClassName('form-input')[0];
     const formInputLabel = document.getElementById('input-label');
-    console.log(formInput);
-    // console.log(formInputLabel);
 
-    formInput.addEventListener("input", function () {
+    formInput.addEventListener('input', function () {
         formInputLabel.innerText = formInput.value;
     });
 
-
-    const form = document.getElementsByClassName('form');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+    });
 });
