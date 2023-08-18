@@ -42,8 +42,10 @@ function formHandler(e) {
     const resultContainer = document.getElementById('result');
     const num = document.getElementsByClassName('form-input')[0].value;
     const ul = document.createElement("ul");
+    const formInputLabel = document.getElementById('input-label');
 
     resultContainer.innerHTML = '';
+    formInputLabel.innerText = 0;
 
     const result = askMrRoboger(num);
 
