@@ -1,32 +1,18 @@
 // Utility Logic
 function wordConverter(inputArr) {
     const convertedArr = inputArr.map(function (strNum) {
-        strNum.match(/\z/)
-        // const test = strNum.split('');
-        // console.log(test)
-        // console.log(strNum)
-        // const testedArr = test.map(function (singleNum) {
-        //     if (singleNum = '3') {
-        //         return "Won't you be my neightbor?"
-        //     }
-        //     return singleNum
-        // })
-        // console.log(testedArr)
-
-
-        // if (strNum.includes('1')) {
-        //     return "Beep"
-
-        // }
-        // // else if (strNum.includes('2')) {
-        // //     return "Boop"
-        // // }
-        // else if (strNum.includes('3')) {
-        //     return "Won't you be my neighbor?"
-        // }
-        // return strNum
+        if (strNum.includes('3')) {
+            return "Won't you be my neighbor?"
+        }
+        else if (strNum.includes('2')) {
+            return "Boop"
+        }
+        else if (strNum.includes('1')) {
+            return "Beep"
+        }
+        return strNum
     })
-    // return convertedArr;
+    return convertedArr;
 };
 
 
@@ -41,9 +27,9 @@ function askMrRoboger(userNum) {
     }
 
     const result = wordConverter(inputArr);
-    // console.log(result)
+    console.log(result)
 };
 
 
 
-askMrRoboger(15);
+askMrRoboger(25);
