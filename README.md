@@ -44,6 +44,14 @@ TEST #4
 Test: "It should replace numbers that contain a "3" with "Won't you be my neighbor?"
 Code: askMrRoboger(6)
 Expected Output: [0, "Beep", "Boop", "Won't you be my neighbor?", 4, 5, 6]
+
+
+Describe: wordConverter()
+
+TEST #1
+Test: "It should replace the numbers with following rule of hierarchy which defines from highest to lowest (3, 2, 1)"
+Code: wordConverter(25)
+Expected Output: ['0', 'Beep', 'Boop', "Won't you be my neighbor?", '4', '5', '6', '7', '8', '9', 'Beep', 'Beep', 'Boop', "Won't you be my neighbor?", 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', "Won't you be my neighbor?", 'Boop', 'Boop']
 ```
 
 ## Known Bugs
