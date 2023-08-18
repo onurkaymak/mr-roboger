@@ -3,8 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script src="/js/scripts.js"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container-main">
+      <h1>Mr. Roboger's Neighborhood</h1>
+      <form class="form">
+        <p class="form-text">Some text here</p>
+        <input
+          type="range"
+          id="volume"
+          name="volume"
+          min="0"
+          max="50"
+          class="form-input"
+        />
+        <label for="volume">Volume</label>
+        <button type="submit" class="form-btn">Ask Mr.Roboger</button>
+      </form>
+    </div>
+  </body>
 </html>

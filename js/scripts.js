@@ -30,3 +30,11 @@ function askMrRoboger(userNum) {
 };
 
 askMrRoboger(40);
+
+
+// UI Logic
+
+window.addEventListener("load", function () {
+    const form = document.getElementsByClassName('form');
+    console.log(form)
+});
