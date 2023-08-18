@@ -14,9 +14,15 @@ function askMrRoboger(userNum) {
             strNum.replace(strNum, "Beep");
             inputArr.splice(index, 1, "Beep");
         }
+        else if (strNum.includes('2')) {
+            strNum = "Boop";
+            strNum.replace(strNum, "Boop");
+            inputArr.splice(index, 1, "Boop");
+        }
     })
     console.log(inputArr);
 };
+
 
 
 askMrRoboger(5);
