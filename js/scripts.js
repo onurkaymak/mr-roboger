@@ -25,14 +25,35 @@ function askMrRoboger(userNum) {
         let strNum = [i].toString();
         inputArr.push(strNum);
     }
-
     const result = wordConverter(inputArr);
+    return result
 };
 
-askMrRoboger(40);
 
 
 // UI Logic
+
+function formHandler(e) {
+    e.preventDefault();
+    const num = document.getElementsByClassName('form-input')[0].value;
+    const result = askMrRoboger(num);
+
+    const listResult = result.map(function (num) {
+        const li = document.createElement("li");
+        li.append(num)
+        return li;
+    });
+
+
+
+    const ul = document.createElement("ul");
+    ul.append(listResult);
+
+    console.log(ul)
+
+
+}
+
 
 window.addEventListener("load", function () {
     const form = document.getElementById('form');
@@ -43,7 +64,5 @@ window.addEventListener("load", function () {
         formInputLabel.innerText = formInput.value;
     });
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-    });
+    form.addEventListener('submit', formHandler)
 });
