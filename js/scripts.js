@@ -38,12 +38,12 @@ function askMrRoboger(userNum) {
 
 function formHandler(e) {
     e.preventDefault();
-    resultContainer.append(ul);
-
     const form = document.getElementById('form');
     const resultContainer = document.getElementById('result');
     const num = document.getElementsByClassName('form-input')[0].value;
     const ul = document.createElement("ul");
+
+    resultContainer.innerHTML = '';
 
     const result = askMrRoboger(num);
 
