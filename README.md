@@ -39,6 +39,11 @@ TEST #3
 Test: "It should replace numbers that contain a "2" with "Boop"
 Code: askMrRoboger(6)
 Expected Output: [0, "Beep", "Boop", 3, 4, 5, 6]
+
+TEST #4
+Test: "It should replace numbers that contain a "3" with "Won't you be my neighbor?"
+Code: askMrRoboger(6)
+Expected Output: [0, "Beep", "Boop", 3, 4, 5, 6]
 ```
 
 ## Known Bugs
