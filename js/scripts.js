@@ -27,9 +27,6 @@ function askMrRoboger(userNum) {
     }
 
     const result = wordConverter(inputArr);
-    console.log(result)
 };
 
-
-
-askMrRoboger(25);
+askMrRoboger(40);
