@@ -25,9 +25,10 @@ _An independent project assignment for Epicodus, project is about JavaScript Arr
 ```
 Describe: askMrRoboger()
 
+TEST #1
 Test: "It should return an array of numbers from 0 to the user's inputted number"
-Code: askMrRoboger(userInput);
-Expected Output: [userInput]
+Code: askMrRoboger(5);
+Expected Output: [ 0, 1, 2, 3, 4, 5 ]
 ```
 
 ## Known Bugs
