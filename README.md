@@ -34,6 +34,11 @@ TEST #2
 Test: "It should replace numbers that contain a "1" with "Beep"
 Code: askMrRoboger(5);
 Expected Output: [0, "Beep", 2, 3, 4, 5 ]
+
+TEST #3
+Test: "It should replace numbers that contain a "2" with "Boop"
+Code: askMrRoboger(6)
+Expected Output: [0, "Beep", "Boop", 3, 4, 5, 6]
 ```
 
 ## Known Bugs
