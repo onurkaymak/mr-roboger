@@ -32,8 +32,8 @@ Expected Output: [ 0, 1, 2, 3, 4, 5 ]
 
 TEST #2
 Test: "It should replace numbers that contain a "1" with "Beep"
-Code: askMrRoboger(3);
-Expected Output: [0, "Beep", 2, 3 ]
+Code: askMrRoboger(5);
+Expected Output: [0, "Beep", 2, 3, 4, 5 ]
 ```
 
 ## Known Bugs
