@@ -29,6 +29,11 @@ TEST #1
 Test: "It should return an array of numbers from 0 to the user's inputted number"
 Code: askMrRoboger(5);
 Expected Output: [ 0, 1, 2, 3, 4, 5 ]
+
+TEST #2
+Test: "It should replace numbers that contain a "1" with "Beep"
+Code: askMrRoboger(3);
+Expected Output: [0, "Beep", 2, 3 ]
 ```
 
 ## Known Bugs
