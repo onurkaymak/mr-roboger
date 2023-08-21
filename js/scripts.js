@@ -5,10 +5,10 @@ function wordConverter(inputArr) {
             return "Won't you be my neighbor?"
         }
         else if (strNum.includes('2')) {
-            return "Boop"
+            return "Boop!"
         }
         else if (strNum.includes('1')) {
-            return "Beep"
+            return "Beep!"
         }
         return strNum
     })
