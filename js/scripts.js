@@ -26,6 +26,7 @@ function askMrRoboger(userNum) {
         inputArr.push(strNum);
     }
     const result = wordConverter(inputArr);
+    console.log(result)
     return result
 };
 
@@ -55,6 +56,7 @@ function formHandler(e) {
         ul.append(li);
     });
     resultContainer.append(ul);
+
 
     form.reset();
 }

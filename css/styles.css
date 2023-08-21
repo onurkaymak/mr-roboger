@@ -96,7 +96,3 @@ label {
   transform: scaleX(1);
   transition: transform 350ms ease-in-out;
 }
-
-.container-result {
-  margin-top: 5rem;
-}
