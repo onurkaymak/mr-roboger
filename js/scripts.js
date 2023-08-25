@@ -10,11 +10,12 @@ function wordConverter(inputArr) {
         else if (strNum.includes('1')) {
             return "Beep!"
         }
-        return strNum
+        else {
+            return strNum
+        }
     })
     return convertedArr;
 };
-
 
 // Business Logic
 
@@ -26,16 +27,13 @@ function askMrRoboger(userNum) {
         inputArr.push(strNum);
     }
     const result = wordConverter(inputArr);
-    console.log(result)
+
     return result
 };
 
 
 
 // UI Logic
-
-
-
 
 function formHandler(e) {
     e.preventDefault();
@@ -56,8 +54,6 @@ function formHandler(e) {
         ul.append(li);
     });
     resultContainer.append(ul);
-
-
     form.reset();
 }
 
@@ -68,7 +64,12 @@ window.addEventListener("load", function () {
     const formInputLabel = document.getElementById('input-label');
 
     formInput.addEventListener('input', function () {
-        formInputLabel.innerText = formInput.value;
+        if (formInput.value === '') {
+            formInputLabel.innerText = 0;
+        }
+        else {
+            formInputLabel.innerText = formInput.value;
+        }
     });
 
     form.addEventListener('submit', formHandler)

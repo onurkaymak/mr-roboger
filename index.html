@@ -3,32 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container-main">
       <form class="form" id="form">
         <h1>Mr. Roboger's Neighborhood</h1>
-        <p class="form-text">Choose your number between 0 to 50</p>
         <p class="form-text">Your current number is:</p>
-        <label for="volume" id="input-label">0</label>
+        <label for="num" id="input-label">0</label>
         <input
-          type="range"
-          id="volume"
-          name="volume"
-          min="0"
-          max="50"
-          value="0"
+          type="text"
+          id="num"
+          name="num"
           class="form-input"
+          autocomplete="off"
         />
         <button type="submit" class="form-btn">Ask Mr.Roboger</button>
       </form>
 
-      <div class="container-result">
-        <div class="result" id="result"></div>
-      </div>
+      <div class="result" id="result"></div>
     </div>
   </body>
 </html>
